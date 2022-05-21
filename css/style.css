@@ -1,0 +1,262 @@
+/*@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Caveat:700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 16px;    
+/*    font-family: 'Anton', sans-serif;*/
+    font-family: 'Alfa Slab One', cursive;
+
+}
+
+.container {
+    width: 100%;
+/*    height: 100vh;*/
+    margin: 0 auto;
+    padding: 0;
+    top: 0;
+    text-align: center;
+}
+
+.container .material-icons {
+    position: absolute;
+/*    top: calc(calc(100vh / 7)*3);*/
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: greenyellow;
+    text-shadow: 3px 3px 10px black;
+    transition: .75s ease left;
+    opacity: 0;
+    left: 90vw;
+    z-index: 999;
+}
+
+.container .height-obj {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    left: 15vw;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,.6) 1px, transparent 1px);
+    background-size: 30px 10px, 50px 50px;
+    background-repeat: repeat-y;
+}
+
+.container .width-obj {
+    position: absolute;
+    left: 0;
+    height: 30px;
+/*    top: calc(calc(100vh / 7)*3);*/
+    transform: translateY(-50%);
+    background-image: linear-gradient(to right, rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 50px 50px, 10px 30px;
+    background-repeat: repeat-x;
+}
+
+.container .material-icons.checked {
+    left: 15vw;
+    opacity: 1;
+}
+
+.height, .width {
+    width: 100vw;
+    float: left;
+    background: red;
+/*    height: calc(calc(100vh / 7)*3);*/
+}
+
+.title {
+    float: left;
+    width: 15vw;
+    background: #ECAA38;
+    
+/*    height: 100%;*/
+}
+
+.height > .title {
+    background: #5DA793;
+}
+
+.title:nth-of-type(2){
+    background: darkred;
+}
+
+.data {
+    float: left;
+    width: 85vw;
+    background: #6885A0;
+    
+/*    height: 100%;*/
+}
+
+.data > .values, .data > .type {
+/*    height: 50vh;*/
+}
+
+.values {
+    float: right;
+    width: 25%;
+    background: red;
+}
+.type {
+    float: left;
+    width: 75%;
+}
+
+h2 {
+    line-height: calc(100vh / 7);
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 2rem;
+    text-align: center;
+    padding-right: 5px;
+    
+/*    height: calc(100vh / 7);*/
+}
+
+.values h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 1px 1px 5px rgba(255,255,255,0.3);
+}
+
+.type h2 {
+    color: rgba(255,255,255,0.5);
+    text-shadow: 1px 1px 5px rgba(255,255,255,0.3);
+}
+
+.type h2:nth-child(1){
+    background: #A1B86C;
+}
+
+.type h2:nth-child(2){
+    background: #1294BA;
+}
+
+.type h2:nth-child(3){
+    background: #0D3B55;
+}
+
+.values h2:nth-child(1){
+    background: #5DA793;
+}
+
+.values h2:nth-child(2){
+    background: #0F7899;
+}
+
+.values h2:nth-child(3){
+    background: #0F5B78;
+}
+
+.width .type h2:nth-child(1){
+    background: #C02E1D;
+}
+.width .type h2:nth-child(2){
+    background: #F16C21;
+}
+.width .type h2:nth-child(3){
+    background: #EBC844;
+}
+
+.width .values h2:nth-child(1){
+    background: #D94E1E;
+}
+
+.width .values h2:nth-child(2){
+    background: #EE8B2C;
+}
+
+.width .values h2:nth-child(3){
+    background: #ECAA38;
+}
+
+.height > .title > h1, .width > .title > h1 {
+    text-align: center;
+    width: 15vw;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    display: table-cell;
+    vertical-align: middle;
+    
+/*    height: calc(calc(100vh / 7)*3);*/
+}
+
+h1 > span {
+    position: relative;
+    font-size: 2.5rem;
+    width: 100%;
+    color: white;
+    display: block;
+    text-shadow: 1px 1px 5px black;
+}
+
+.browser h1 {
+    line-height: calc(100vh / 14);
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    
+/*    height: calc(100vh / 14);*/
+}
+
+.browser .wrapper {
+    width: 100vw;
+    float: left;
+    text-align: center;
+}
+
+.browser .wrapper:nth-last-of-type(1) {
+    width: 100vw;
+    text-align: center;
+}
+
+.browser .data {
+    width: 100vw;
+}
+
+.browser .data:nth-of-type(1) {
+    text-align: right;
+}
+
+.browser .data:nth-of-type(2) {
+    text-align: left;
+}
+
+.browser h1:nth-of-type(2){
+    background: #000;
+}
+
+h1.developer {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+
+h1.browser-data {
+    font-family: monospace;
+    line-height: calc(100vh / 42);
+    font-size: 13px;
+}
+
+h2.hightlight {
+    color: rgba(0,0,0,.5);
+    text-shadow: 1px 1px 55px yellow;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    h1 > span {
+        font-size: 2.8rem;
+    }
+    
+    h1.browser-data {
+        line-height: calc(100vh / 14);
+        font-size: 100%;
+    }
+}

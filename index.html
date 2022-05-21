@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        
+        <title>Screen Sizes</title>
+        
+    </head>
+    
+    <!-- css reset -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+    
+    <!-- css style -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<body>
+   
+    <div class="container">
+      
+      <i class="material-icons">check_circle</i>
+      
+      <div class="height-obj"></div>
+      
+      <div class="width-obj"></div>
+       
+        <section class="results">
+        
+            <div class="height row-x-3">
+               
+                <div class="title row-x-3">
+                    <h1 class="row-x-3"><span>h</span>
+                        <span>e</span>
+                        <span>i</span>
+                        <span>g</span>
+                        <span>h</span>
+                        <span>t</span></h1>
+                </div>
+
+                <div class="data row-x-3">
+                    <div class="type row-x-3">
+                        <h2 class="row-x-1">screen</h2>
+                        <h2 class="row-x-1">window.inner</h2>
+                        <h2 class="row-x-1">window.outer</h2>
+                    </div>
+
+                    <div class="values row-x-3">
+                        <h2 class="row-x-1 screen-height"></h2>
+                        <h2 class="row-x-1 window-innerHeight hightlight"></h2>
+                        <h2 class="row-x-1 window-outerHeight"></h2>                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="width row-x-3">
+               
+                <div class="title row-x-3">
+                    <h1 class="row-x-3"><span>w</span>
+                        <span>i</span>
+                        <span>d</span>
+                        <span>t</span>
+                        <span>h</span></h1>
+                </div>
+                
+                <div class="data row-x-3">
+                    <div class="type row-x-3">
+                        <h2 class="row-x-1">screen</h2>
+                        <h2 class="row-x-1">window.inner</h2>
+                        <h2 class="row-x-1">window.outer</h2>
+                    </div>
+
+                    <div class="values row-x-3">
+                        <h2 class="row-x-1 screen-width"></h2>
+                        <h2 class="row-x-1 window-innerWidth hightlight"></h2>
+                        <h2 class="row-x-1 window-outerWidth"></h2>                        
+                    </div>
+                </div>
+            </div>
+                   
+            <div class="row-x-1 browser">
+                <div class="data">
+                    <div class="wrapper">
+                        <h1 class="row-x-half browser-data">
+                           <?php
+                            echo $_SERVER['HTTP_USER_AGENT'] . "\n\n";
+
+                            $browser = get_browser(null, true);
+                            print_r($browser);
+                            ?>
+                        </h1>
+                        <h1 class="row-x-half developer">www.pamplonas.dev</h1>
+                    </div>
+                </div>
+            </div>
+                    
+        </section>
+        
+    </div>
+   
+    <script type="text/javascript" src="./js/script.js"></script>   
+   
+    </body>
+    
+</html>
